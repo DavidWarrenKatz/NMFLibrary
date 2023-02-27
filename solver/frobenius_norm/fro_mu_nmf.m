@@ -15,7 +15,7 @@ function [x, infos] = fro_mu_nmf(V, rank, in_options)
 %       rank        : rank
 %       in_options 
 %           alg     : mu: Multiplicative upates (MU)
-%                       Reference for Euclidean distance and Kullback?Leibler divergence (KL):
+%                       Reference for Euclidean distance and Kullback-Leibler divergence (KL):
 %                           Daniel D. Lee and H. Sebastian Seung,
 %                           "Algorithms for non-negative matrix factorization,"
 %                           NIPS 2000. 
@@ -40,7 +40,7 @@ function [x, infos] = fro_mu_nmf(V, rank, in_options)
 % Output:
 %       x           : non-negative matrix solution, i.e., x.W: (m x rank), x.H: (rank x n)
 %       infos       : log information
-%           epoch   : iteration nuber
+%           epoch   : iteration number
 %           cost    : objective function value
 %           optgap  : optimality gap
 %           time    : elapsed time
